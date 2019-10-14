@@ -1,0 +1,15 @@
+#include<iostream>
+#include<conio.h>
+#include<cmath>
+using namespace std;
+int main()
+{
+long long int d, m,  t1, num;
+long long int y;
+d=31;
+m=31*11;
+y= (long long int)365 * 999999999998;
+num = d + m + y - 1;
+t1=num % 7;
+cout<<t1;
+}
