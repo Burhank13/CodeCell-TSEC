@@ -1,0 +1,29 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    //char st[]="a11472o5t6";
+    //char st[]="lw4n88j12n1";
+    //char st[]="1v8886l256338ar0ekk";
+    char st[]="asdweecds11kzjaybw2ksadz3115kasj21";
+    int c, i;
+    c=0;
+    for(i=0;i<34;i++)
+    {
+        if(isdigit(st[i]))
+        {
+            c=c+1;
+        }
+    }
+    cout<<c<<endl;
+    if(c==13)
+    {
+        cout<<"Hannah survived";
+    }
+    else
+    {
+        cout<<"Hannah did not survive";
+    }
+    
+}
