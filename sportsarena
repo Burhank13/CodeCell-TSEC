@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int a,b,c,d,n;
+    int pr[]={2048,1024,512,256,128,64,32,16,8,4,2,1};
+    n=(sizeof(pr)/sizeof(*pr));
+    a=8194;
+    c=0;
+    for(b=0;b<n;b++)
+    {
+        while(a>=pr[b])
+        {
+            a=a-pr[b];
+            c++;
+            
+        }
+        
+    }
+    cout<<c;
+}
