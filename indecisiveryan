@@ -1,0 +1,27 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+    int n, rem, rev, count,p;
+    count=0;
+    rev=0;
+    for(n=1;n<=2000000;n++)
+    {
+        p=n;
+        rev=0;
+        while(p!=0)
+        {
+         rem = p%10;
+         rev = rev*10 +rem;
+         p=p/10;
+        }
+        if(abs(rev-n)%23047885==0)
+        {
+            count++;
+        }
+    }
+    cout<<count<<endl;
+    
+}
