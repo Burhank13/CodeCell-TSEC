@@ -1,0 +1,42 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int subtr(int p, int x)
+{
+    int cnt = 0;
+    if(p%x==0)
+    {
+          while(p!=0)
+        {
+            p=p-x;
+            cnt++;
+        }
+    }
+    return cnt;
+}
+
+int main()
+{
+    int p,x,y,z,b,count=0,count1=0,count2=0;
+    x=263;
+    y=179;
+    z=311;
+    p=300001;
+    
+    count = subtr(p, x);
+    cout<<count<<endl;
+    count1 = subtr(p, y);
+    cout<<count1<<endl;
+    count2 = subtr(p, z);
+    cout<<count2<<endl;
+     if(count+count1+count2==0)
+     {
+         cout<<"-1";
+     }
+     else
+     {
+    count>=count1 ? count >= count2? cout<<count : cout<<count2 : count1>=count2? cout<<count1: cout<<count2; 
+     }
+     
+}
