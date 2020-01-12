@@ -4,7 +4,8 @@ using namespace std;
 int
 main ()
 {
-    int t, w,c,d,temp1, sum=0;
+    int t, w,c,d,temp1;
+    float sum=0;
     cout<<"Enter The Number of Test Cases: ";
     cin >> t;
     while (t--)
